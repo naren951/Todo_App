@@ -2,7 +2,7 @@
     package="com.naren.todo">
 
    <application
-        android:label="todo"
+        android:label="Todo"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

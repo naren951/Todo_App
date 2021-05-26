@@ -3,8 +3,6 @@ import 'package:flutter/foundation.dart';
 import 'package:todo/models/task.dart';
 import 'dart:collection';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:todo/screens/tasksScreen.dart';
 int id=0;
 List<Task> _taskList=[];
 class TaskData extends ChangeNotifier{
@@ -30,7 +28,6 @@ class TaskData extends ChangeNotifier{
     }
     for(int i=0;i<boxValue!.length;i++){
       _taskList.add(Task(name: task![i],isDone: boxValue![i]=='true',date: DateTime.parse(dates![i]),id:int.parse(uid![i])));
-      print(task!.last);
     }
     id=int.parse(uid!.last);
     id+=2;
