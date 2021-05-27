@@ -12,7 +12,7 @@ class TaskData extends ChangeNotifier{
   List<String>? uid=[];
   Future getData() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    prefs.clear();
+    //prefs.clear();
     task!.clear();
     boxValue!.clear();
     _taskList.clear();
